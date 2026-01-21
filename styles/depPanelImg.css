@@ -1,0 +1,250 @@
+/* 메인 진료과/센터 이미지 10개 */
+#depR_1 {
+  background: url("../image/Department.png") no-repeat -240px 0px;
+  background-color: white;
+}
+
+#depR_2 {
+  background: url("../image/Department.png") no-repeat 0px -80px;
+  background-color: white;
+}
+
+#depR_3 {
+  background: url("../image/Department.png") no-repeat -1120px 0px;
+  background-color: white;
+}
+
+#depR_4 {
+  background: url("../image/Department.png") no-repeat -800px -80px;
+  background-color: white;
+}
+
+#depR_5 {
+  background: url("../image/Department.png") no-repeat -80px -320px;
+  background-color: white;
+}
+
+#depR_6 {
+  background: url("../image/Department.png") no-repeat -320px -320px;
+  background-color: white;
+}
+
+#depR_7 {
+  background: url("../image/Department.png") no-repeat -480px -320px;
+  background-color: white;
+}
+
+#depR_8 {
+  background: url("../image/Department.png") no-repeat -560px -240px;
+  background-color: white;
+}
+
+#depR_9 {
+  background: url("../image/Department.png") no-repeat -0px -320px;
+  background-color: white;
+}
+
+#depR_10 {
+  background: url("../image/Department.png") no-repeat -480px -400px;
+  background-color: white;
+}
+
+/* 진료과/센터 패널 내 아이콘 이미지(진료과) */
+#list1-1 {
+  background: url("../image/Department.png") no-repeat 0px 0px;
+}
+#list1-2 {
+  background: url("../image/Department.png") no-repeat -80px 0px;
+}
+#list1-3 {
+  background: url("../image/Department.png") no-repeat -160px 0px;
+}
+#list1-4 {
+  background: url("../image/Department.png") no-repeat -240px 0px;
+}
+#list1-5 {
+  background: url("../image/Department.png") no-repeat -320px 0px;
+}
+#list1-6 {
+  background: url("../image/Department.png") no-repeat -400px 0px;
+}
+#list1-7 {
+  background: url("../image/Department.png") no-repeat -480px 0px;
+}
+#list1-8 {
+  background: url("../image/Department.png") no-repeat -560px 0px;
+}
+#list1-9 {
+  background: url("../image/Department.png") no-repeat -640px 0px;
+}
+#list1-10 {
+  background: url("../image/Department.png") no-repeat -720px 0px;
+}
+#list1-11 {
+  background: url("../image/Department.png") no-repeat -800px 0px;
+}
+#list1-12 {
+  background: url("../image/Department.png") no-repeat -880px 0px;
+}
+#list1-13 {
+  background: url("../image/Department.png") no-repeat -960px 0px;
+}
+#list1-14 {
+  background: url("../image/Department.png") no-repeat -1040px 0px;
+}
+#list1-15 {
+  background: url("../image/Department.png") no-repeat -1120px 0px;
+}
+#list1-16 {
+  background: url("../image/Department.png") no-repeat -1200px 0px;
+}
+#list1-17 {
+  background: url("../image/Department.png") no-repeat 0px -80px;
+}
+#list1-18 {
+  background: url("../image/Department.png") no-repeat -80px -80px;
+}
+#list1-19 {
+  background: url("../image/Department.png") no-repeat -160px -80px;
+}
+#list1-20 {
+  background: url("../image/Department.png") no-repeat -240px -80px;
+}
+#list1-21 {
+  background: url("../image/Department.png") no-repeat -320px -80px;
+}
+#list1-22 {
+  background: url("../image/Department.png") no-repeat -400px -80px;
+}
+#list1-23 {
+  background: url("../image/Department.png") no-repeat -480px -80px;
+}
+#list1-24 {
+  background: url("../image/Department.png") no-repeat -560px -80px;
+}
+#list1-25 {
+  background: url("../image/Department.png") no-repeat -640px -80px;
+}
+#list1-26 {
+  background: url("../image/Department.png") no-repeat -720px -80px;
+}
+#list1-27 {
+  background: url("../image/Department.png") no-repeat -800px -80px;
+}
+#list1-28 {
+  background: url("../image/Department.png") no-repeat -880px -80px;
+}
+#list1-29 {
+  background: url("../image/Department.png") no-repeat -960px -80px;
+}
+#list1-30 {
+  background: url("../image/Department.png") no-repeat -1040px -80px;
+}
+#list1-31 {
+  background: url("../image/Department.png") no-repeat -1120px -80px;
+}
+#list1-32 {
+  background: url("../image/Department.png") no-repeat -1200px -80px;
+}
+#list1-33 {
+  background: url("../image/Department.png") no-repeat -0px -160px;
+}
+#list1-34 {
+  background: url("../image/Department.png") no-repeat -80px -160px;
+}
+#list1-35 {
+  background: url("../image/Department.png") no-repeat -160px -160px;
+}
+#list1-36 {
+  background: url("../image/Department.png") no-repeat -240px -160px;
+}
+
+/* 진료과/센터 패널 내 아이콘 이미지(암센터) */
+#list2-1 {
+  background: url("../image/Department.png") no-repeat -0px -240px;
+}
+#list2-2 {
+  background: url("../image/Department.png") no-repeat -80px -240px;
+}
+#list2-3 {
+  background: url("../image/Department.png") no-repeat -160px -240px;
+}
+#list2-4 {
+  background: url("../image/Department.png") no-repeat -240px -240px;
+}
+#list2-5 {
+  background: url("../image/Department.png") no-repeat -320px -240px;
+}
+#list2-6 {
+  background: url("../image/Department.png") no-repeat -400px -240px;
+}
+#list2-7 {
+  background: url("../image/Department.png") no-repeat -480px -240px;
+}
+#list2-8 {
+  background: url("../image/Department.png") no-repeat -560px -240px;
+}
+#list2-9 {
+  background: url("../image/Department.png") no-repeat -640px -240px;
+}
+#list2-10 {
+  background: url("../image/Department.png") no-repeat -720px -240px;
+}
+#list2-11 {
+  background: url("../image/Department.png") no-repeat -800px -240px;
+}
+#list2-12 {
+  background: url("../image/Department.png") no-repeat -880px -240px;
+}
+
+/* 진료과/센터 패널 내 아이콘 이미지(전문센터) */
+#list3-1 {
+  background: url("../image/Department.png") no-repeat -0px -320px;
+}
+#list3-2 {
+  background: url("../image/Department.png") no-repeat -80px -320px;
+}
+#list3-3 {
+  background: url("../image/Department.png") no-repeat -160px -320px;
+}
+#list3-4 {
+  background: url("../image/Department.png") no-repeat -240px -320px;
+}
+#list3-5 {
+  background: url("../image/Department.png") no-repeat -320px -320px;
+}
+#list3-6 {
+  background: url("../image/Department.png") no-repeat -400px -320px;
+}
+#list3-7 {
+  background: url("../image/Department.png") no-repeat -480px -320px;
+}
+#list3-8 {
+  background: url("../image/Department.png") no-repeat -560px -320px;
+}
+
+/* 진료과/센터 패널 내 아이콘 이미지(특성화센터) */
+#list4-1 {
+  background: url("../image/Department.png") no-repeat 0px -400px;
+}
+#list4-2 {
+  background: url("../image/Department.png") no-repeat -80px -400px;
+}
+#list4-3 {
+  background: url("../image/Department.png") no-repeat -160px -400px;
+}
+#list4-4 {
+  background: url("../image/Department.png") no-repeat -240px -400px;
+}
+#list4-5 {
+  background: url("../image/Department.png") no-repeat -320px -400px;
+}
+#list4-6 {
+  background: url("../image/Department.png") no-repeat -400px -400px;
+}
+#list4-7 {
+  background: url("../image/Department.png") no-repeat -480px -400px;
+}
+#list4-8 {
+  background: url("../image/Department.png") no-repeat -560px -400px;
+}

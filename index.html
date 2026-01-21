@@ -1,0 +1,2081 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/favicon.png" type="image/png">
+
+    <!-- 부트스트랩 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- css 연결 -->
+    <link rel="stylesheet" href="styles/mainstyle.css">
+    <link rel="stylesheet" href="styles/depPanelImg.css">
+
+    <!-- 부트스트랩 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"
+        defer></script>
+
+    <!-- 자바스크립트 연결 -->
+    <script src="scripts/setting.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/depslide.js" defer></script>
+    <script src="scripts/infoslider.js" defer></script>
+
+    <title>중앙대학교병원</title>
+</head>
+
+<body>
+    <header>
+        <!-- 탑 네비게이션 바 -->
+        <div class="header_top">
+            <button type="button" class="mobile_menubtn" aria-expanded="false"
+                aria-controls="mobile_menupanel"></button>
+            <div class="call_info">대표전화<div class="call_img"></div><span class="call_number">1800-1114</span></div>
+            <!-- 좌측: 로그인, 회원가입 -->
+            <ul class="nav_left">
+                <li><a class="nav_link" id="login" href="#">로그인</a></li>
+                <li><a class="nav_link" href="#">회원가입</a></li>
+            </ul>
+
+            <!-- 중앙: 로고 -->
+            <div class="nav_center">
+                <a href="index.html">
+                    <div class="logo"></div>
+                </a>
+            </div>
+
+            <!-- 우측: ENGLISH -->
+            <ul class="nav_right">
+                <li><a class="nav_link" href="#">ENGLISH</a></li>
+            </ul>
+        </div>
+
+        <div class="header_bottom">
+            <!-- GNB -->
+            <nav>
+                <ul class="gnb">
+                    <li>
+                        <!-- 메가메뉴 버튼 -->
+                        <button type="button" class="megamenu_img" aria-expanded="false" aria-controls="megamenu_panel">
+                        </button>
+                    </li>
+                    <!-- 1번째 탭 -->
+                    <li class="gnb_list">
+                        <a href="">병원안내</a>
+                        <div class="lnb">
+                            <div class="lnb_inner">
+                                <ul class="column">
+                                    <li>
+                                        병원 소개
+                                        <ul>
+                                            <li>
+                                                <a href="">병원장 인사말</a>
+                                            </li>
+                                            <li>
+                                                <a href="">병원 연혁</a>
+                                            </li>
+                                            <li>
+                                                <a href="">미션·비젼</a>
+                                            </li>
+                                            <li>
+                                                <a href="">병원 현황</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        병원 홍보
+                                        <ul>
+                                            <li>
+                                                <a href="">홍보 영상</a>
+                                            </li>
+                                            <li>
+                                                <a href="">홍보 책자</a>
+                                            </li>
+                                            <li>
+                                                <a href="">참 좋은 중앙 E-BOOK</a>
+                                            </li>
+                                            <li>
+                                                <a href="">ESG 보고서</a>
+                                            </li>
+                                            <li>
+                                                <a href="">병원 HI</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="column">
+                                    <li>
+                                        병원 소식
+                                        <ul>
+                                            <li>
+                                                <a href="">공지 사항</a>
+                                            </li>
+                                            <li>
+                                                <a href="">병원 뉴스</a>
+                                            </li>
+                                            <li>
+                                                <a href="">언론 보도</a>
+                                            </li>
+                                            <li>
+                                                <a href="">입찰 공고</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="column">
+                                    <li>
+                                        사회 공헌
+                                        <ul>
+                                            <li>
+                                                <a href="">국내 의료봉사</a>
+                                            </li>
+                                            <li>
+                                                <a href="">해외 의료봉사</a>
+                                            </li>
+                                            <li>
+                                                <a href="">지역사회 공헌</a>
+                                            </li>
+                                            <li>
+                                                <a href="">저소득가정 의료비 지원</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 2번째 탭 -->
+                    <li class="gnb_list">
+                        <a href="">진료안내</a>
+                        <div class="lnb">
+                            <div class="lnb_inner">
+                                <ul class="column">
+                                    <li>
+                                        <a href="">온라인 진료 예약</a>
+                                    </li>
+                                    <li>
+                                        처음진료 간편예약
+                                        <ul>
+                                            <li>
+                                                <a href="">전화 예약</a>
+                                            </li>
+                                            <li>
+                                                <a href="">간편 예약</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">종합검진 예약</a>
+                                    </li>
+                                    <li>
+                                        <a href="">예약 내역 조회</a>
+                                    </li>
+                                    <li>
+                                        <a href="">신체검사</a>
+                                    </li>
+                                </ul>
+                                <ul class="column">
+                                    <li>
+                                        <a href="">외래진료</a>
+                                    </li>
+                                    <li>
+                                        <a href="">응급진료</a>
+                                    </li>
+                                    <li>
+                                        진료비 안내
+                                        <ul>
+                                            <li>
+                                                <a href="">진료비 수납기</a>
+                                            </li>
+                                            <li>
+                                                <a href="">진료비 환불 안내</a>
+                                            </li>
+                                            <li>
+                                                <a href="">진료비 후불 결제 서비스</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        입·퇴원/간호간병 통합서비스
+                                        <ul>
+                                            <li>
+                                                <a href="">입·퇴원 안내</a>
+                                            </li>
+                                            <li>
+                                                <a href="">간호간병 통합서비스</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">가정간호</a>
+                                    </li>
+                                </ul>
+                                <ul class="column">
+                                    <li>
+                                        <a href="">병리 자료 대출 안내</a>
+                                    </li>
+                                    <li>
+                                        예방접종 안내
+                                        <ul>
+                                            <li>
+                                                <a href="">황열 예방접종</a>
+                                            </li>
+                                            <li>
+                                                <a href="">콜레라 예방접종</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">비급여 항목 안내</a>
+                                    </li>
+                                    <li>
+                                        <a href="">수술실 CCTV 안내</a>
+                                    </li>
+                                    <li>
+                                        <a href="">호스피스 완화의료</a>
+                                    </li>
+                                    <li>
+                                        <a href="">국민안심병원 및 코로나19</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 3번째 탭 -->
+                    <li class="gnb_list">
+                        <a href="">진료과/센터</a>
+                        <div class="lnb">
+                            <div class="lnb_inner">
+                                <ul class="column">
+                                    <li>
+                                        <a href="">진료과</a>
+                                    </li>
+                                    <li>
+                                        <a href="">암센터</a>
+                                    </li>
+                                    <li>
+                                        <a href="">클리닉</a>
+                                    </li>
+                                    <li>
+                                        <a href="">전문 센터</a>
+                                    </li>
+                                    <li>
+                                        <a href="">특성화센터</a>
+                                    </li>
+                                    <li>
+                                        IRB
+                                        <ul>
+                                            <li>
+                                                <a href="">IRB 소개</a>
+                                            </li>
+                                            <li>
+                                                <a href="">IRB 심의 안내</a>
+                                            </li>
+                                            <li>
+                                                <a href="">IRB 관련 공지</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="column">
+                                    <li>
+                                        의료진
+                                        <ul>
+                                            <li>
+                                                <a href="">진료과</a>
+                                            </li>
+                                            <li>
+                                                <a href="">암센터</a>
+                                            </li>
+                                            <li>
+                                                <a href="">특성화센터</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="column">
+                                    <li>
+                                        <a href="">인체유래물은행</a>
+                                    </li>
+                                    <li>
+                                        지원 부서
+                                        <ul>
+                                            <li>
+                                                <a href="">간호본부</a>
+                                            </li>
+                                            <li>
+                                                <a href="">국제진료센터</a>
+                                            </li>
+                                            <li>
+                                                <a href="">사회사업팀</a>
+                                            </li>
+                                            <li>
+                                                <a href="">의학정보실</a>
+                                            </li>
+                                            <li>
+                                                <a href="">인재 개발실</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 4번째 탭 -->
+                    <li class="gnb_list">
+                        <a href="">이용안내</a>
+                        <div class="lnb">
+                            <div class="lnb_inner">
+                                <ul class="column">
+                                    <li>
+                                        <a href="">오시는 길</a>
+                                    </li>
+                                    <li>
+                                        주차 안내
+                                        <ul>
+                                            <li>
+                                                <a href="">주차장 위치 및 이용 방법</a>
+                                            </li>
+                                            <li>
+                                                <a href="">주차 요금 무인 정산기</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">면회 안내</a>
+                                    </li>
+                                    <li>
+                                        <a href="">전화번호 안내</a>
+                                    </li>
+                                    <li>
+                                        <a href="">층별 배치도</a>
+                                    </li>
+                                </ul>
+                                <ul class="column">
+                                    <li>
+                                        <a href="">편의시설 안내</a>
+                                    </li>
+                                    <li>
+                                        강의실 대관 안내
+                                        <ul>
+                                            <li>
+                                                <a href="">강의실 시설 안내</a>
+                                            </li>
+                                            <li>
+                                                <a href="">대관 내규</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">모바일 앱</a>
+                                    </li>
+                                </ul>
+                                <ul class="column">
+                                    <li>
+                                        서류 발급
+                                        <ul>
+                                            <li>
+                                                <a href="">진료 의뢰서</a>
+                                            </li>
+                                            <li>
+                                                <a href="">진료기록 사본 발급</a>
+                                            </li>
+                                            <li>
+                                                <a href="">제증명 발급</a>
+                                            </li>
+                                            <li>
+                                                <a href="">영상 자료 발급 및 기록</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 5번째 탭 -->
+                    <li class="gnb_list">
+                        <a href="">건강정보</a>
+                        <div class="lnb">
+                            <div class="lnb_inner">
+                                <ul class="column">
+                                    <li>
+                                        <a href="">건강 강좌</a>
+                                    </li>
+                                    <li>
+                                        건강 칼럼
+                                        <ul>
+                                            <li>
+                                                <a href="">질환 백과</a>
+                                            </li>
+                                            <li>
+                                                <a href="">건강 동영상</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="column">
+                                    <li>
+                                        <a href="">
+                                            영양 정보
+                                            <div class="nutri_info"></div>
+                                            <span>[당뇨병] 1형 당뇨병과 식생활</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="column">
+                                    <li>
+                                        <a href="">
+                                            약품 검색
+                                            <div class="medi_search"></div>
+                                            <span>약품에 대해 궁금하다면?</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="search_img" type="button" aria-expanded="false"
+                            aria-controls="search_panel"></button>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- 검색 패널 -->
+            <div id="search_panel" hidden>
+                <div class="overlayBlack"></div>
+                <div class="search_box">
+                    <form class="search_form">
+                        <input class="search_input" type="text" title="검색" placeholder="검색 내용을 입력하세요.">
+                        <button class="search_btn" type="submit"></button>
+                    </form>
+                    <ul class="search_keyword">
+                        <li>
+                            <a href="">
+                                #오시는길
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                #주차안내
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                #장례식장
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                #진료예약
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                #신체검사
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                #장애진단서
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                #응급진료
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                #파킨슨
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                #가정간호
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                #예방접종
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                #비급여진료
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                #코로나19
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                #병원전화번호
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                #진료의뢰서
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                #진단서발급
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                #제증명
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                #영상자료
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                #질환백과
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                #입원비용
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="search_close" type="button"></button>
+                </div>
+            </div>
+
+            <div class="megamenu_panel" id="megamenu_panel" hidden>
+                <div class="overlay_noheader"></div>
+                <!-- 메가메뉴 패널 -->
+                <div class="megamenu">
+                    <div class="site_map">
+                        <!-- megamenu의 맨 윗부분 -->
+                        <form class="megamenu_head">
+                            <strong>빠른메뉴찾기</strong>
+                            <input class="megamenu_search" type="text" title="메뉴검색" placeholder="검색 내용을 입력하세요.">
+                            <button class="megamenu_search_btn" type="submit">검색</button>
+                            <ul class="megamenu_connection">
+                                <li>
+                                    <a href="">중앙대학교 의료원으로 이동</a>
+                                </li>
+                                <li>
+                                    <a href="">중앙대학교 광명병원으로 이동</a>
+                                </li>
+                            </ul>
+                        </form>
+
+                        <!-- megamenu 메뉴 리스트 -->
+                        <ul class="megamenu_list">
+                            <!-- 1번째 열 -->
+                            <li class="list_column">
+                                <h3 class="list_name">
+                                    <a href="">병원안내</a>
+                                </h3>
+                                <ul>
+                                    <li>병원 소개
+                                        <!-- 리스트 목록 중 내부 요소에만 적용 -->
+                                        <ul class="list_innername">
+                                            <li>
+                                                <a href="">병원장 인사말</a>
+                                            </li>
+                                            <li>
+                                                <a href="">병원 연혁</a>
+                                            </li>
+                                            <li>
+                                                <a href="">미션·비젼</a>
+                                            </li>
+                                            <li>
+                                                <a href="">병원 현황</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>병원 홍보
+                                        <!-- 리스트 목록 중 내부 요소에만 적용 -->
+                                        <ul class="list_innername">
+                                            <li>
+                                                <a href="">홍보 영상</a>
+                                            </li>
+                                            <li>
+                                                <a href="">홍보 책자</a>
+                                            </li>
+                                            <li>
+                                                <a href="">참 좋은 중앙 E-BOOK</a>
+                                            </li>
+                                            <li>
+                                                <a href="">ESG 보고서</a>
+                                            </li>
+                                            <li>
+                                                <a href="">병원 HI</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>병원 소식
+                                        <!-- 리스트 목록 중 내부 요소에만 적용 -->
+                                        <ul class="list_innername">
+                                            <li>
+                                                <a href="">공지 사항</a>
+                                            </li>
+                                            <li>
+                                                <a href="">병원 뉴스</a>
+                                            </li>
+                                            <li>
+                                                <a href="">언론 보도</a>
+                                            </li>
+                                            <li>
+                                                <a href="">입찰 공고</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>사회 공헌
+                                        <!-- 리스트 목록 중 내부 요소에만 적용 -->
+                                        <ul class="list_innername">
+                                            <li>
+                                                <a href="">국내 의료봉사</a>
+                                            </li>
+                                            <li>
+                                                <a href="">해외 의료봉사</a>
+                                            </li>
+                                            <li>
+                                                <a href="">지역사회 공헌</a>
+                                            </li>
+                                            <li>
+                                                <a href="">저소득가정 의료비 지원</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- 2번째 열 -->
+                            <li class="list_column">
+                                <!-- 분류 대표 목록 이름에만 적용 -->
+                                <h3 class="list_name">
+                                    <a href="">진료안내</a>
+                                </h3>
+                                <ul>
+                                    <li>
+                                        <a href="">온라인 진료 예약</a>
+                                    </li>
+                                    <li>
+                                        처음진료 간편예약
+                                        <!-- 리스트 목록 중 내부 요소에만 적용 -->
+                                        <ul class="list_innername">
+                                            <li>
+                                                <a href="">전화 예약</a>
+                                            </li>
+                                            <li>
+                                                <a href="">간편 예약</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">종합검진 예약</a>
+                                    </li>
+                                    <li>
+                                        <a href="">예약 내역 조회</a>
+                                    </li>
+                                    <li>
+                                        <a href="">신체검사</a>
+                                    </li>
+                                    <li>
+                                        <a href="">외래진료</a>
+                                    </li>
+                                    <li>
+                                        <a href="">응급진료</a>
+                                    </li>
+                                    <li>진료비 안내
+                                        <!-- 리스트 목록 중 내부 요소에만 적용 -->
+                                        <ul class="list_innername">
+                                            <li>
+                                                <a href="">진료비 수납기</a>
+                                            </li>
+                                            <li>
+                                                <a href="">진료비 환불 안내</a>
+                                            </li>
+                                            <li>
+                                                <a href="">진료비 후불 결제 서비스</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>입·퇴원/간호간병 통합서비스
+                                        <!-- 리스트 목록 중 내부 요소에만 적용 -->
+                                        <ul class="list_innername">
+                                            <li>
+                                                <a href="">입·퇴원 안내</a>
+                                            </li>
+                                            <li>
+                                                <a href="">간호간병 통합서비스</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">가정간호</a>
+                                    </li>
+                                    <li>
+                                        <a href="">병리 자료 대출 안내</a>
+                                    </li>
+                                    <li>예방접종 안내
+                                        <!-- 리스트 목록 중 내부 요소에만 적용 -->
+                                        <ul class="list_innername">
+                                            <li>
+                                                <a href="">황열 예방접종</a>
+                                            </li>
+                                            <li>
+                                                <a href="">콜레라 예방접종</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">비급여 항목 안내</a>
+                                    </li>
+                                    <li>
+                                        <a href="">수술실 CCTV 안내</a>
+                                    </li>
+                                    <li>
+                                        <a href="">호스피스 완화의료</a>
+                                    </li>
+                                    <li>
+                                        <a href="">국민안심병원 및 코로나19</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- 3번째 열 -->
+                            <li class="list_column">
+                                <h3 class="list_name">
+                                    <a href="">진료과/센터</a>
+                                </h3>
+                                <ul>
+                                    <li>
+                                        <a href="">진료과</a>
+                                    </li>
+                                    <li>
+                                        <a href="">암센터</a>
+                                    </li>
+                                    <li>
+                                        <a href="">클리닉</a>
+                                    </li>
+                                    <li>
+                                        <a href="">전문 센터</a>
+                                    </li>
+                                    <li>
+                                        <a href="">특성화센터</a>
+                                    </li>
+                                    <li>IRB
+                                        <!-- 리스트 목록 중 내부 요소에만 적용 -->
+                                        <ul class="list_innername">
+                                            <li>
+                                                <a href="">IRB 소개</a>
+                                            </li>
+                                            <li>
+                                                <a href="">IRB 심의 안내</a>
+                                            </li>
+                                            <li>
+                                                <a href="">IRB 관련 공지</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>의료진
+                                        <!-- 리스트 목록 중 내부 요소에만 적용 -->
+                                        <ul class="list_innername">
+                                            <li>
+                                                <a href="">진료과</a>
+                                            </li>
+                                            <li>
+                                                <a href="">암센터</a>
+                                            </li>
+                                            <li>
+                                                <a href="">특성화센터</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">인체유래물은행</a>
+                                    </li>
+                                    <li>지원 부서
+                                        <!-- 리스트 목록 중 내부 요소에만 적용 -->
+                                        <ul class="list_innername">
+                                            <li>
+                                                <a href="">간호본부</a>
+                                            </li>
+                                            <li>
+                                                <a href="">국제진료센터</a>
+                                            </li>
+                                            <li>
+                                                <a href="">사회사업팀</a>
+                                            </li>
+                                            <li>
+                                                <a href="">의학정보실</a>
+                                            </li>
+                                            <li>
+                                                <a href="">인재 개발실</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- 4번째 열 -->
+                            <li class="list_column">
+                                <h3 class="list_name">
+                                    <a href="">이용안내</a>
+                                </h3>
+                                <ul>
+                                    <li>
+                                        <a href="">오시는 길</a>
+                                    </li>
+                                    <li>주차 안내
+                                        <!-- 리스트 목록 중 내부 요소에만 적용 -->
+                                        <ul class="list_innername">
+                                            <li>
+                                                <a href="">주차장 위치 및 이용 방법</a>
+                                            </li>
+                                            <li>
+                                                <a href="">주차 요금 무인 정산기</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">면회 안내</a>
+                                    </li>
+                                    <li>
+                                        <a href="">전화번호 안내</a>
+                                    </li>
+                                    <li>
+                                        <a href="">층별 배치도</a>
+                                    </li>
+                                    <li>
+                                        <a href="">편의시설 안내</a>
+                                    </li>
+                                    <li>강의실 대관 안내
+                                        <!-- 리스트 목록 중 내부 요소에만 적용 -->
+                                        <ul class="list_innername">
+                                            <li>
+                                                <a href="">강의실 시설 안내</a>
+                                            </li>
+                                            <li>
+                                                <a href="">대관 내규</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">모바일 앱</a>
+                                    </li>
+                                    <li>서류 발급
+                                        <!-- 리스트 목록 중 내부 요소에만 적용 -->
+                                        <ul class="list_innername">
+                                            <li>
+                                                <a href="">진료 의뢰서</a>
+                                            </li>
+                                            <li>
+                                                <a href="">진료기록 사본 발급</a>
+                                            </li>
+                                            <li>
+                                                <a href="">제증명 발급</a>
+                                            </li>
+                                            <li>
+                                                <a href="">영상 자료 발급 및 기록</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- 5번째 열 -->
+                            <li class="list_column">
+                                <h3 class="list_name">
+                                    <a href="">건강정보</a>
+                                </h3>
+                                <ul>
+                                    <li>
+                                        <a href="">건강 강좌</a>
+                                    </li>
+                                    <li>건강 칼럼
+                                        <!-- 리스트 목록 중 내부 요소에만 적용 -->
+                                        <ul class="list_innername">
+                                            <li>
+                                                <a href="">질환 백과</a>
+                                            </li>
+                                            <li>
+                                                <a href="">건강 동영상</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">영양 정보</a>
+                                    </li>
+                                    <li>
+                                        <a href="">약품 검색</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile_menupanel" id="mobile_menupanel" hidden>
+            <div class="overlay_mobile"></div>
+            <div class="mobile_menuwrapper">
+                <button class="mobilemenu_close" type="button"></button>
+                <ul class="mobile_menuinner">
+                    <li>
+                        <a href="">병원안내</a>
+                    </li>
+                    <li>
+                        <a href="">진료안내</a>
+                    </li>
+                    <li>
+                        <a href="">진료과/센터</a>
+                    </li>
+                    <li>
+                        <a href="">이용안내</a>
+                    </li>
+                    <li>
+                        <a href="">건강정보</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <!-- 메인 컨텐츠 -->
+    <main>
+        <!-- 비디오 구역 -->
+        <section class="video_area">
+            <video id="mainVideo" src="image/hospital_video.mp4" autoplay muted loop playsinline></video>
+            <button class="video_btn" id="videoBtn"></button>
+        </section>
+
+        <!-- 퀵아이콘 구역 -->
+        <section class="quick_icons_area">
+            <ul class="quick_icon_set">
+                <!-- 진료예약 -->
+                <li class="quick_icon">
+                    <p>
+                        <a href=""><strong>진료예약</strong></a>
+                    </p>
+                    <div class="quickimg" id="quickimg1"></div>
+                    <span class="quickicon_Btns">
+                        <a href="">회원예약</a>
+                        <a href="">비회원예약</a>
+                    </span>
+                </li>
+
+                <!-- 진료시간표 -->
+                <li class="quick_icon">
+                    <p>
+                        <a href=""><strong>진료시간표</strong></a>
+                    </p>
+                    <div class="quickimg" id="quickimg2"></div>
+                    <span class="quickicon_Btn">
+                        <a href="">
+                            시간표보기
+                        </a>
+                    </span>
+                </li>
+
+                <!-- 의료진 찾기 -->
+                <li class="quick_icon">
+                    <p>
+                        <a href=""><strong>의료진 찾기</strong></a>
+                    </p>
+                    <div class="quickimg" id="quickimg3"></div>
+                    <span class="quickicon_Btn">
+                        <a href="">
+                            의료진 검색
+                            <div id="quickicon_search"></div>
+                        </a>
+                    </span>
+                </li>
+
+                <!-- 서류발급 -->
+                <li class="quick_icon">
+                    <p>
+                        <a href=""><strong>서류발급</strong></a>
+                    </p>
+                    <div class="quickimg" id="quickimg4"></div>
+                    <span class="quickicon_Btns">
+                        <a href="">제증명</a>
+                        <a href="">진료기록 사본</a>
+                    </span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 미니탭 진료과 구역 -->
+        <section class="minitab_dep">
+            <div class="minitab_depL">
+                <ul>
+                    <li>
+                        <h1>진료과/센터</h1>
+                    </li>
+                    <li>
+                        <button class="depL_Btn1" type="button" aria-expanded="false" aria-controls="dep_panel">
+                            더보기 +
+                        </button>
+                        <button class="depL_Btn2" type="button" aria-expanded="false" aria-controls="dep_panel">
+                            확인하기
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="minitab_depR">
+                <div class="slideWrap">
+                    <ul class="slideInner">
+                        <li>
+                            <a href="">
+                                <div class="depR_icon" id="depR_1"></div>
+                                내분비내과
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="depR_icon" id="depR_2"></div>
+                                신장내과
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="depR_icon" id="depR_3"></div>
+                                신경과
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="depR_icon" id="depR_4"></div>
+                                중환자의학과
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="depR_icon" id="depR_5"></div>
+                                소화기센터
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="depR_icon" id="depR_6"></div>
+                                척추센터
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="depR_icon" id="depR_7"></div>
+                                갑상선센터
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="depR_icon" id="depR_8"></div>
+                                유방암 클리닉
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="depR_icon" id="depR_9"></div>
+                                로봇수술센터
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="depR_icon" id="depR_10"></div>
+                                장기이식센터
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="depR_leftBtn"></div>
+                <div class="depR_rightBtn"></div>
+            </div>
+        </section>
+
+        <!-- 진료과/센터 패널 -->
+        <section class="dep_panel" id="dep_panel" hidden>
+            <div class="overlay_dep"></div>
+            <div class="department">
+                <button class="dep_close" type="button"></button>
+                <div class="dep_inner">
+                    <p id="dep_pc">진료과 / 암센터 / 클리닉 / 전문센터 / 특성화센터</p>
+                    <p id="dep_mobile">진료과 / 센터</p>
+                    <div class="depinner_btns">
+                        <button class="depinner_btn active" id="depBtn_1" data-target="list1">진료과</button>
+                        <button class="depinner_btn" id="depBtn_2" data-target="list2">암센터</button>
+                        <button class="depinner_btn" id="depBtn_3" data-target="list3">전문센터</button>
+                        <button class="depinner_btn" id="depBtn_4" data-target="list4">특성화센터</button>
+                    </div>
+                    <!-- 진료과 -->
+                    <div class="tab_list active" id="list1">
+                        <ul class="list_content">
+                            <li>
+                                <a href="">
+                                    <div id="list1-1" class="listIcon"></div>
+                                    가정의학과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-2" class="listIcon"></div>
+                                    감염내과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-3" class="listIcon"></div>
+                                    구강악안면외과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-4" class="listIcon"></div>
+                                    내분비내과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-5" class="listIcon"></div>
+                                    류마티스내과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-6" class="listIcon"></div>
+                                    마취통증의학과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-7" class="listIcon"></div>
+                                    방사선종양학과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-8" class="listIcon"></div>
+                                    병리과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-9" class="listIcon"></div>
+                                    비뇨의학과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-10" class="listIcon"></div>
+                                    산부인과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-11" class="listIcon"></div>
+                                    성형외과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-12" class="listIcon"></div>
+                                    소아청소년과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-13" class="listIcon"></div>
+                                    소화기내과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-14" class="listIcon"></div>
+                                    순환기내과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-15" class="listIcon"></div>
+                                    신경과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-16" class="listIcon"></div>
+                                    신경외과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-17" class="listIcon"></div>
+                                    신장내과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-18" class="listIcon"></div>
+                                    심장혈관흉부외과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-19" class="listIcon"></div>
+                                    안과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-20" class="listIcon"></div>
+                                    영상의학과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-21" class="listIcon"></div>
+                                    외과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-22" class="listIcon"></div>
+                                    응급의학과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-23" class="listIcon"></div>
+                                    이비인후과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-24" class="listIcon"></div>
+                                    재활의학과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-25" class="listIcon"></div>
+                                    정신건강의학과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-26" class="listIcon"></div>
+                                    정형외과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-27" class="listIcon"></div>
+                                    중환자의학과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-28" class="listIcon"></div>
+                                    진단검사의학과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-29" class="listIcon"></div>
+                                    치과교정과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-30" class="listIcon"></div>
+                                    치과보존과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-31" class="listIcon"></div>
+                                    치과보철과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-32" class="listIcon"></div>
+                                    치주과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-33" class="listIcon"></div>
+                                    피부과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-34" class="listIcon"></div>
+                                    핵의학과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-35" class="listIcon"></div>
+                                    혈액종양내과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list1-36" class="listIcon"></div>
+                                    호흡기알레르기내과
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <!-- 암센터 -->
+                    <div class="tab_list" id="list2">
+                        <ul class="list_content">
+                            <li>
+                                <a href="">
+                                    <div id="list2-1" class="listIcon"></div>
+                                    간·담도·췌장암 클리닉
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list2-2" class="listIcon"></div>
+                                    갑상선 센터
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list2-3" class="listIcon"></div>
+                                    대장암 클리닉
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list2-4" class="listIcon"></div>
+                                    두경부암 클리닉<br>(귀·코·목)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list2-5" class="listIcon"></div>
+                                    부인암 클리닉
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list2-6" class="listIcon"></div>
+                                    신경심리 스트레스<br>클리닉
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list2-7" class="listIcon"></div>
+                                    위암 클리닉
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list2-8" class="listIcon"></div>
+                                    유방암 클리닉
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list2-9" class="listIcon"></div>
+                                    전립선·방광·신장암<br>클리닉
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list2-10" class="listIcon"></div>
+                                    중심정맥관리 클리닉
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list2-11" class="listIcon"></div>
+                                    폐·식도암 클리닉
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list2-12" class="listIcon"></div>
+                                    혈액·종양 내과
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <!-- 전문센터 -->
+                    <div class="tab_list" id="list3">
+                        <ul class="list_content">
+                            <li>
+                                <a href="">
+                                    <div id="list3-1" class="listIcon"></div>
+                                    갑상선센터
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list3-2" class="listIcon"></div>
+                                    뇌혈관센터
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list3-3" class="listIcon"></div>
+                                    로봇수술센터
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list3-4" class="listIcon"></div>
+                                    소화기센터
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list3-5" class="listIcon"></div>
+                                    심장혈관·부정맥센터
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list3-6" class="listIcon"></div>
+                                    중환자진료센터
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list3-7" class="listIcon"></div>
+                                    척추센터
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list3-8" class="listIcon"></div>
+                                    호흡기알레르기센터
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <!-- 특성화센터 -->
+                    <div class="tab_list" id="list4">
+                        <ul class="list_content">
+                            <li>
+                                <a href="">
+                                    <div id="list4-1" class="listIcon"></div>
+                                    게임과몰입센터
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list4-2" class="listIcon"></div>
+                                    당뇨센터
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list4-3" class="listIcon"></div>
+                                    생명사랑위기대응센터
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list4-4" class="listIcon"></div>
+                                    요로결석센터
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list4-5" class="listIcon"></div>
+                                    인공신장센터
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list4-6" class="listIcon"></div>
+                                    인터벤션센터
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list4-7" class="listIcon"></div>
+                                    장기이식센터
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div id="list4-8" class="listIcon"></div>
+                                    희귀질환클리닉
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 병원 소식 구역 -->
+        <section class="hospital_news">
+            <div class="hospital_news_inner">
+                <div class="newsWrapper">
+                    <ul class="hospital_tabs_inner">
+                        <li>
+                            <button class="news_tabBtn active" id="newsTab_1" data-target="newsList1">
+                                병원소식
+                            </button>
+                        </li>
+                        <li>
+                            <button class="news_tabBtn" id="newsTab_2" data-target="newsList2">
+                                공지사항
+                            </button>
+                        </li>
+                        <li>
+                            <button class="news_tabBtn" id="newsTab_3" data-target="newsList3">
+                                언론보도
+                            </button>
+                        </li>
+                        <li>
+                            <button class="news_tabBtn" id="newsTab_4" data-target="newsList4">
+                                입찰공고
+                            </button>
+                        </li>
+                    </ul>
+
+                    <!-- 목록별 리스트 모음 -->
+                    <div class="newslistWrapper">
+                        <!-- 목록별 리스트 (병원소식) -->
+                        <div class="newslist active" id="newsList1">
+                            <a href="" class="newslistLink">
+                                <p>더보기</p>
+                            </a>
+                            <ul class="newslist_inner">
+                                <li>
+                                    <a href="">
+                                        <div class="newscontentBox">
+                                            <p class="newslistIconBox">
+                                                <span class="newslistIcontype1">소식</span>
+                                                <span class="newslistNewicon">N</span>
+                                            </p>
+                                            <p class="newslistDetail">
+                                                중앙대 MBA 원우회, 소아 환자 위해<br>자선경매 수익금 기부
+                                            </p>
+                                            <p class="newslistDate">
+                                                2025-12-03
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="newscontentBox">
+                                            <p class="newslistIconBox">
+                                                <span class="newslistIcontype1">소식</span>
+                                                <span class="newslistNewicon">N</span>
+                                            </p>
+                                            <p class="newslistDetail">
+                                                중앙대병원 김한구 교수, 대한두개안면성형외과학회 '최다 피인용 논문상' 수상
+                                            </p>
+                                            <p class="newslistDate">
+                                                2025-12-03
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="newscontentBox">
+                                            <p class="newslistIconBox">
+                                                <span class="newslistIcontype1">소식</span>
+                                                <span class="newslistNewicon">N</span>
+                                            </p>
+                                            <p class="newslistDetail">
+                                                중앙대병원, ‘건강정보 고속도로’ 개통…<br>환자 진료 기록 한눈에 본다
+                                            </p>
+                                            <p class="newslistDate">
+                                                2025-12-03
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- 목록별 리스트 (공지사항) -->
+                        <div class="newslist" id="newsList2">
+                            <a href="" class="newslistLink">
+                                <p>더보기</p>
+                            </a>
+                            <ul class="newslist_inner">
+                                <li>
+                                    <a href="">
+                                        <div class="newscontentBox">
+                                            <p class="newslistIconBox">
+                                                <span class="newslistIcontype1">공지</span>
+                                                <span class="newslistNewicon">N</span>
+                                            </p>
+                                            <p class="newslistDetail">
+                                                2025년 12월 고객만족 Best 직원을<br>소개합니다
+                                            </p>
+                                            <p class="newslistDate">
+                                                2025-12-18
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="newscontentBox">
+                                            <p class="newslistIconBox">
+                                                <span class="newslistIcontype1">공지</span>
+                                                <span class="newslistNewicon">N</span>
+                                            </p>
+                                            <p class="newslistDetail">
+                                                2026 암환자교실
+                                            </p>
+                                            <p class="newslistDate">
+                                                2025-12-18
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="newscontentBox">
+                                            <p class="newslistIconBox">
+                                                <span class="newslistIcontype1">공지</span>
+                                            </p>
+                                            <p class="newslistDetail">
+                                                국가통합바이오빅데이터 구축사업<br>참여자 모집 안내
+                                            </p>
+                                            <p class="newslistDate">
+                                                2025-07-31
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- 목록별 리스트 (언론보도) -->
+                        <div class="newslist" id="newsList3">
+                            <a href="" class="newslistLink">
+                                더보기
+                            </a>
+                            <ul class="newslist_inner">
+                                <li>
+                                    <a href="">
+                                        <div class="newscontentBox">
+                                            <p class="newslistIconBox">
+                                                <span class="newslistIcontype2">이비인후과</span>
+                                                <span class="newslistSource">헬스경향</span>
+                                            </p>
+                                            <p class="newslistDetail">
+                                                겨울철 의외의 불청객 ‘이명’…<br>대처는 이렇게!
+                                            </p>
+                                            <p class="newslistName">
+                                                문석균
+                                            </p>
+                                            <p class="newslistDate">
+                                                2025-12-18
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="newscontentBox">
+                                            <p class="newslistIconBox">
+                                                <span class="newslistIcontype2">진단검사의학과</span>
+                                                <span class="newslistSource">메디파나뉴스</span>
+                                            </p>
+                                            <p class="newslistDetail">
+                                                대한의학유전학회 '우수논문상' 수상
+                                            </p>
+                                            <p class="newslistName">
+                                                김혜련
+                                            </p>
+                                            <p class="newslistDate">
+                                                2025-12-16
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="newscontentBox">
+                                            <p class="newslistIconBox">
+                                                <span class="newslistIcontype2">신경외과</span>
+                                                <span class="newslistSource">뉴시스</span>
+                                            </p>
+                                            <p class="newslistDetail">
+                                                "미래 의학 혁신 이끌어"…'미래한국의료대상' 6명...
+                                            </p>
+                                            <p class="newslistName">
+                                                권정택
+                                            </p>
+                                            <p class="newslistDate">
+                                                2025-12-15
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 목록별 리스트 (입찰공고) -->
+                        <div class="newslist" id="newsList4">
+                            <a href="" class="newslistLink">
+                                <p>더보기</p>
+                            </a>
+                            <ul class="newslist_inner">
+                                <li>
+                                    <a href="">
+                                        <div class="newscontentBox">
+                                            <p class="newslistIconBox">
+                                                <span class="newslistIcontype3">입찰중</span>
+                                            </p>
+                                            <p class="newslistDetail">
+                                                중앙대학교병원 중앙관1층 B구역 공간재배치 공사 입찰
+                                            </p>
+                                            <p class="newslistDeadline">
+                                                마감날짜 : 2025.12.25 17:00
+                                            </p>
+                                            <p class="newslistDate">
+                                                2025-12-18
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="newscontentBox">
+                                            <p class="newslistIconBox">
+                                                <span class="newslistIcontype3">입찰중</span>
+                                            </p>
+                                            <p class="newslistDetail">
+                                                중앙대학교병원 '외래환자 도착확인 및 기초검사 키오스크' 임대업체 선정
+                                            </p>
+                                            <p class="newslistDeadline">
+                                                마감날짜 : 2025.12.26 23:59
+                                            </p>
+                                            <p class="newslistDate">
+                                                2025-12-17
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="newscontentBox">
+                                            <p class="newslistIconBox">
+                                                <span class="newslistIcontype3">입찰중</span>
+                                                <span class="newslistIcontype4">재공고</span>
+                                            </p>
+                                            <p class="newslistDetail">
+                                                중앙대학교병원 중앙상가 2층, 5층 사무실 냉.난방기 설치공사
+                                            </p>
+                                            <p class="newslistDeadline">
+                                                마감날짜 : 2025.12.22 17:00
+                                            </p>
+                                            <p class="newslistDate">
+                                                2025-12-17
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 건강정보 / 영양정보 슬라이더-->
+        <section class="info_Slider">
+            <div class="info_Slider_inner">
+                <!-- 건강정보 슬라이더 -->
+                <div class="health_slider">
+                    <h2>건강정보</h2>
+                    <!-- 슬라이드 -->
+                    <div class="health_slider_noPag">
+                        <button id="health_slider_prev"></button>
+                        <div class="healthslider_view">
+                            <ul class="healthslider_list">
+                                <li class="healthslider_item">
+                                    <a href="" class="healthslider_iteminner">
+                                        <div class="healthslider_img" id="healthSlImg1"></div>
+                                        <p class="healthslider_name">
+                                            상염색체우성 다낭콩팥병 건강강좌 (2025.12.13 오전 10시)
+                                        </p>
+                                        <p class="healthslider_source">
+                                            건강강좌
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="healthslider_item">
+                                    <a href="" class="healthslider_iteminner">
+                                        <div class="healthslider_img" id="healthSlImg2"></div>
+                                        <p class="healthslider_name">
+                                            직장암 로봇수술은 어떻게 하나요?
+                                        </p>
+                                        <p class="healthslider_source">
+                                            건강칼럼
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="healthslider_item">
+                                    <a href="" class="healthslider_iteminner">
+                                        <div class="healthslider_img" id="healthSlImg3"></div>
+                                        <p class="healthslider_name">
+                                            난소암의 치료방법은?
+                                        </p>
+                                        <p class="healthslider_source">
+                                            건강칼럼
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="healthslider_item">
+                                    <a href="" class="healthslider_iteminner">
+                                        <div class="healthslider_img" id="healthSlImg4"></div>
+                                        <p class="healthslider_name">
+                                            자궁내막암은 어떤 증상이 있나요?
+                                        </p>
+                                        <p class="healthslider_source">
+                                            건강칼럼
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button id="health_slider_next"></button>
+                    </div>
+                    <!-- 페이지네이션 -->
+                    <div class="slider_pagination1">
+                        <button class="dot active"></button>
+                        <button class="dot"></button>
+                    </div>
+                </div>
+                <!-- 영양정보 슬라이더 -->
+                <div class="nutri_slider">
+                    <h2>영양정보</h2>
+                    <!-- 슬라이드 -->
+                    <div class="nutri_slider_noPag">
+                        <button id="nutri_slider_prev"></button>
+                        <div class="nutrislider_view">
+                            <ul class="nutrislider_list">
+                                <li class="nutrislider_item">
+                                    <a href="" class="nutrislider_iteminner">
+                                        <div class="nutrislider_img" id="nutriSlImg1"></div>
+                                        <p class="nutrislider_name">
+                                            [알레르기] 식품알레르기의 영양관리
+                                        </p>
+                                        <p class="nutrislider_source">
+                                            건강한 영양관리
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nutrislider_item">
+                                    <a href="" class="nutrislider_iteminner">
+                                        <div class="nutrislider_img" id="nutriSlImg2"></div>
+                                        <p class="nutrislider_name">
+                                            당뇨병의 식사관리 8)<br>1형 당뇨병과 식생활
+                                        </p>
+                                        <p class="nutrislider_source">
+                                            당뇨병
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nutrislider_item">
+                                    <a href="" class="nutrislider_iteminner">
+                                        <div class="nutrislider_img" id="nutriSlImg3"></div>
+                                        <p class="nutrislider_name">
+                                            [위장질환] 크론병 식사요법
+                                        </p>
+                                        <p class="nutrislider_source">
+                                            건강한 영양관리
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nutrislider_item">
+                                    <a href="" class="nutrislider_iteminner">
+                                        <div class="nutrislider_img" id="nutriSlImg4"></div>
+                                        <p class="nutrislider_name">
+                                            [근골격계질환] 골다공증의 영양관리
+                                        </p>
+                                        <p class="nutrislider_source">
+                                            건강한 영양관리
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button id="nutri_slider_next"></button>
+                    </div>
+                    <!-- 페이지네이션 -->
+                    <div class="slider_pagination2">
+                        <button class="dot active"></button>
+                        <button class="dot"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 지도 및 안내 구역 -->
+        <section class="mapinfo_area">
+            <!-- 카카오맵 -->
+            <div class="kakaomap_area">
+                <ul class="kakaomap_address">
+                    <li>
+                        [06973] 서울 동작구 흑석로 102 (흑석동 224-1)
+                    </li>
+                    <li>
+                        중앙대학교병원
+                    </li>
+                </ul>
+                <!-- 카카오맵 - 지도퍼가기 -->
+                <div id="daumRoughmapContainer1766599617046" class="root_daum_roughmap root_daum_roughmap_landing">
+                </div>
+                <script charset="UTF-8" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js">
+                </script>
+                <script charset="UTF-8">
+                    new daum.roughmap.Lander({
+                        "timestamp": "1766599617046",
+                        "key": "etrhwse6cqs",
+                        "mapWidth": "100%",
+                        "mapHeight": "360"
+                    }).render();
+                </script>
+            </div>
+            <!-- 방문 안내 -->
+            <div class="visit_area">
+                <div class="visit_top">
+                    <ul class="visitlist">
+                        <li>
+                            <a href="">
+                                <div class="visit_img" id="visit_img1"></div>
+                                <p>오시는 길</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="visit_img" id="visit_img2"></div>
+                                <p>주차안내</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="visit_img" id="visit_img3"></div>
+                                <p>원내배치도</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="visit_bottom">
+                    <li class="visit_callnumber">
+                        <h1>대표전화번호</h1>
+                        <p>1800-1114</p>
+                    </li>
+                    <li class="visit_kakaochannel">
+                        <a href="">
+                            <div id="visit_img4"></div>
+                            <p>중앙대학교병원<br>스마트 봇(카카오톡)</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer_inner">
+            <div id="footer_logo"></div>
+            <div class="footer_info">
+                <ul class="footer_info1">
+                    <li><a href="">환자권리장전</a></li>
+                    <li id="footer_info1_impo"><a href="">개인정보처리방침</a></li>
+                    <li><a href="">비급여항목안내</a></li>
+                </ul>
+                <address>
+                    <p>
+                        06973 서울특별시 동작구 흑석로 102 (흑석동 224-1) TEL : 1800-1114
+                        <br>COPYRIGHT (C) CHUNG-ANG UNIVERSITY
+                        HOSPITAL, ALL RIGHTS RESERVED.
+                    </P>
+                </address>
+            </div>
+            <div class="isms_wrap">
+                <div id="isms_img"></div>
+                <ul>
+                    <li>
+                        [인증범위] 의료정보시스템(OCS, EMR)<br>및 홈페이지 서비스 운영
+                    </li>
+                    <li>
+                        [유효기간] 2023.02.01 ~ 2026.01.31
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_info2">
+                <div class="familysite">
+                    <button class="familysite_btn" aria-haspopup="true" aria-expanded="false">
+                        패밀리사이트
+                        <span class="familysite_arrow"></span>
+                    </button>
+
+                    <ul class="familysite_menu" role="menu">
+                        <li role="menuitem"><a href="#">중앙대학교의료원</a></li>
+                        <li role="menuitem"><a href="#">발전기금 후원</a></li>
+                        <li role="menuitem"><a href="#">중앙대학교광명병원</a></li>
+                        <li role="menuitem"><a href="#">건강증진센터</a></li>
+                        <li role="menuitem"><a href="#">일반검진센터</a></li>
+                        <li role="menuitem"><a href="#">진료협력팀</a></li>
+                        <li role="menuitem"><a href="#">장례식장</a></li>
+                        <li role="menuitem"><a href="#">인재채용</a></li>
+                        <li role="menuitem"><a href="#">English</a></li>
+                    </ul>
+                </div>
+                <ul class="footer_sns_inner">
+                    <li>
+                        <a href="">
+                            <div class="sns_img" id="youtube_img"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="sns_img" id="facebook_img"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="sns_img" id="instagram_img"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="sns_img" id="naverblog_img"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
