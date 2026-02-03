@@ -20,17 +20,17 @@
 }
 
 #depR_5 {
-  background: url("../image/Department.png") no-repeat -80px -320px;
+  background: url("../image/Department.png") no-repeat -960px 0px;
   background-color: white;
 }
 
 #depR_6 {
-  background: url("../image/Department.png") no-repeat -320px -320px;
+  background: url("../image/Department.png") no-repeat -480px -320px;
   background-color: white;
 }
 
 #depR_7 {
-  background: url("../image/Department.png") no-repeat -480px -320px;
+  background: url("../image/Department.png") no-repeat -80px -240px;
   background-color: white;
 }
 
@@ -40,7 +40,7 @@
 }
 
 #depR_9 {
-  background: url("../image/Department.png") no-repeat -0px -320px;
+  background: url("../image/Department.png") no-repeat -160px -320px;
   background-color: white;
 }
 
