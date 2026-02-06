@@ -365,7 +365,6 @@ header {
   transform: translate(-50%, -50%);
   width: 50%;
   max-width: 60rem;
-  min-height: 30rem;
   background: white;
   border-radius: 0.5rem;
 }
@@ -383,17 +382,17 @@ header {
 .mobile_menuinner {
   display: flex;
   flex-direction: column;
-  padding: 3rem;
+  padding: 3rem 0rem;
   gap: 2rem;
   align-items: center;
 }
 
 .mobile_menuinner li {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   height: 100%;
-  width: 100%;
-  border-radius: 1rem;
+  width: 90%;
+  border-radius: 2rem;
   border: 3px solid rgb(80, 150, 230);
   text-align: center;
 }
